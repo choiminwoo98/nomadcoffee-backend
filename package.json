@@ -1,0 +1,31 @@
+{
+  "name": "nomadcoffe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec npx ts-node server --ext js,ts",
+    "migrate": "npx prisma migrate dev --preview-feature"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/load-files": "^7.0.0",
+    "@graphql-tools/merge": "^9.0.0",
+    "@graphql-tools/schema": "^10.0.0",
+    "@prisma/client": "^4.16.2",
+    "apollo-server": "^3.12.0",
+    "dotenv": "^16.3.1",
+    "graphql": "^16.7.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "nodemon": "^2.0.22",
+    "prisma": "^4.16.2"
+  }
+}
